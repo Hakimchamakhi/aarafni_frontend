@@ -1,0 +1,90 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  <div class="contactUs">
+    <div class="title">
+      <h2> <b>Contact   US </b> </h2>
+    </div>
+    <div class="box">
+      <div class="contact form">
+
+        <h3>Send a Message</h3>
+
+          <div class="formBox">
+            <div class="row50">
+              <div class="inputBox">
+                <span>First Name</span>
+                <input type="text" placeholder="Firstname" [(ngModel)]="fname">
+              </div>
+              <div class="inputBox">
+                <span>Last Name</span>
+                <input type="text" placeholder="Lastname" [(ngModel)]="lname">
+              </div>
+            </div>
+            <div class="row50">
+              <div class="inputBox">
+                <span>Email</span>
+                <input type="text" placeholder="Email" [(ngModel)]="email">
+              </div>
+              <div class="inputBox">
+                <span>Mobile</span>
+                <input type="text" placeholder="+216" [(ngModel)]="tel">
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <span>Message</span>
+                <textarea placeholder="Write your message here..." [(ngModel)]="message"> </textarea>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBox">
+                <input type="submit" value="Send" (click)="sendmail()">
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+      <div class="contact info">
+        <h3>Contact Info</h3>
+        <div class="infoBox">
+          <div>
+            <span> <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </span>
+            <p>Djerba Mednine Houmet Souk <br>TUNISIA</p>
+          </div>
+          <div>
+            <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            <a href="mailto:loremipsumiemail.com">WEBaseAgency@gmaiL.com</a>
+          </div>
+          <div>
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <a href="mailto:loremipsum@email.com">+216 215 133 75</a>
+          </div>
+
+
+          <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a> </li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i> </a> </li>
+            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> </a> </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="contact map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.573707877885!2d10.853309114550198!3d33.8748755345049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13aaa553f2b423a5%3A0x894ebb54e7e40d0b!2sWEBase%20Agency!5e0!3m2!1sfr!2stn!4v1647963906981!5m2!1sfr!2stn"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      </div>
+
+
+    </div>
+  </div>
+</body>

@@ -1,0 +1,25 @@
+<body>
+    <div class="container">
+      <div class="content">
+  
+        <div class="right-side">
+          <div class="topic-text">Time For Meeting</div>
+          <p> <b>can't wait to see you gays we are so exting</b></p>
+          <div class="input-box">
+            <h3>  <b>choose a day </b> </h3> 
+            <input type="date" [(ngModel)]="meetingdate">
+          </div>
+          <div class="input-box"><br><br>
+            <h3><b>  choose a time</b> </h3>
+            <input type="time" [(ngModel)]="meetingtime">
+          </div>
+          <div class="input-box message-box">
+            
+          </div>
+          <div class="button">
+            <input type="button" value="Send Now" (click)="sendmail()" >
+          </div>
+      </div>
+      </div>
+    </div>
+  </body>

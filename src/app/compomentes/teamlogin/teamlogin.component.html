@@ -1,0 +1,16 @@
+<html>
+   
+    <body>
+    <div class="loginBox">
+        <img src="../../../assets/user.png" class="user">
+        <h2>Log In Here</h2>
+        <form>
+          <p>Email</p>
+            <input type="text" name ="email" [(ngModel)]="email" placeholder="Enter Email">
+            <p>Password</p>
+            <input type="password" name ="password" [(ngModel)]="password" placeholder="Enter Password">
+            <input type="submit" value="log in" (click)="login()">
+        </form>
+    </div>
+    </body>
+</html>

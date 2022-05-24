@@ -1,0 +1,12 @@
+<body>
+<div class="newproject">
+    <h2>Add New Project</h2>
+        <p>Project Title</p>
+        <input type="text" name ="title" [(ngModel)]="title" placeholder="Enter Project Title">
+        <p>Project Owner</p>
+        <ng-select [(ngModel)]="client" [items]="clients" bindLabel="username" bindValue="_id"></ng-select>
+        <p>Project Description</p>
+        <textarea name="description" [(ngModel)]="description" placeholder="Enter Project Description" rows="4" cols="50"></textarea>
+        <input type="submit" value="Add Project" (click)="addproject()">
+</div>
+</body>

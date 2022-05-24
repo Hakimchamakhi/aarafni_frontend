@@ -1,0 +1,58 @@
+<html>
+
+<body>
+    <div class="allpage">
+        <div class="sidebar">
+            <div class="logo-details">
+                <i class='bx bxl-c-plus-plus'></i>
+                <span class="logo_name">Dashboard</span>
+            </div>
+            <ul class="nav-links">
+                <li *ngFor="let project of projects" (click)="getproject(project)">
+                    <a>
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="links_name">{{project.title}}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div>
+                <h1>{{project?.title}}</h1>
+                <p>{{project?.description}}</p>
+                <div class="taskgroupe">
+                    <section class="tasksection">
+                        <h2>Tasks Not Yet Done!</h2>
+                        <ul class="tasks">
+                            <li *ngFor="let x of notdone" class="taskstyle1">{{x}} </li>
+                        </ul>
+                    </section>
+                    <section class="tasksection">
+                        <h2>Tasks In Progress!</h2>
+                        <ul class="tasks">
+                            <li *ngFor="let x of inprogress" class="taskstyle2">{{x}} </li>
+                        </ul>
+                    </section>
+                    <section class="tasksection">
+                        <h2>Tasks Done!</h2>
+                        <ul class="tasks">
+                            <li *ngFor="let x of done" class="taskstyle3">{{x}} </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <section class="commentaire">
+                <div *ngFor="let com of comments" class="commentdiv">
+                    <p><span *ngIf="com.team_member!='true'" class="clientcomm">{{com.comment}}</span></p>
+                    <p><span *ngIf="com.team_member=='true'" class="teamcomm">{{com.comment}}</span></p>
+                </div>
+                <textarea [(ngModel)]="comment"></textarea>
+                <input type="button" value="send comment" (click)="sendcomment()">
+            </section>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

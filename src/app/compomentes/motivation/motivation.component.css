@@ -1,0 +1,26 @@
+body{
+    background-color: #c8e8e9;
+}
+img{
+    size: 50px;
+
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color:#474af0 ;
+    
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: solid;
+        
+}
+p{
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
